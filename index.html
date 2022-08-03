@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDE</title>
+    <script src="js/script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.main-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .html-css-box{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            /* align-items: center;
+            justify-content: center; */
+            height: 100%;
+            width: 100%;
+        }
+        textarea.box {
+            /* float:left; */
+            width: 50%;
+            height: 100%;
+            resize: none;
+        }
+
+        textarea.css {
+            float: right;
+        }
+
+        div.output {
+            width: 99%;
+            height: 50%;
+            border: solid black;
+            /* color: white; */
+            /* background-color: black; */
+            /* float: right; */
+        }
+
+        button.execute {
+            background: black;
+            color: white;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="nav">
+                
+        </div>
+        <div class="html-css-box">
+            <textarea id="html" class="html box" name="editing-area" id="editing"></textarea>
+            <textarea id="css" class="css box" name="editing-area" id="editing"></textarea>
+        </div>
+        <div class="output"></div>
+        <button class="execute" onclick="output()">RUN</button>
+    </div>
+</body>
+
+
+</html>
+<!-- cols="80" rows="40" -->
